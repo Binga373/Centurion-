@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez la Fédération Internationale du Centurion. Siège à Kinshasa, RDC. Rejoignez le mouvement.">
+    <meta name="keywords" content="contact Centurion, Fédération Centurion contact, Centurion RDC contact">
+    <title>Contact - Le Centurion | Fédération Internationale</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-centurion.png" alt="Logo Le Centurion" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230B0B0B%22 stroke=%22%23D4AF37%22 stroke-width=%223%22/><text x=%2250%22 y=%2265%22 font-family=%22Arial%22 font-size=%2240%22 fill=%22%23D4AF37%22 text-anchor=%22middle%22 font-weight=%22bold%22>C</text></svg>'; this.style.width='45px'; this.style.height='45px';">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="sport.html">Le Sport</a></li>
+                <li><a href="reglement.html">Règlement</a></li>
+                <li><a href="federation.html">Fédération</a></li>
+                <li><a href="developpement.html">Développement</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact</h1>
+                <p>Rejoignez le mouvement. Contactez la Fédération Internationale du Centurion.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container reveal">
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name"><i class="fas fa-user"></i> Nom complet</label>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message"><i class="fas fa-comment"></i> Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Votre message..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-or"><i class="fas fa-paper-plane"></i> Envoyer le message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3><i class="fas fa-building"></i> Siège provisoire</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Kinshasa, République Démocratique du Congo</p>
+                        <p><i class="fas fa-envelope"></i> federation@centurion-sport.org</p>
+                        <p><i class="fas fa-globe"></i> www.centurion-sport.org</p>
+                        <hr style="border-color: rgba(212,175,55,0.3); margin: 25px 0;">
+                        <p style="font-style: italic; color: var(--gris-moyen); font-size: 0.9rem;">
+                            « Le Centurion appartient à tous ceux qui veulent le jouer, partout dans le monde, avec presque rien. »
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <img src="images/logo-centurion.png" alt="Logo FIC" class="footer-logo" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230B0B0B%22 stroke=%22%23D4AF37%22 stroke-width=%223%22/><text x=%2250%22 y=%2265%22 font-family=%22Arial%22 font-size=%2240%22 fill=%22%23D4AF37%22 text-anchor=%22middle%22 font-weight=%22bold%22>C</text></svg>'; this.style.width='60px'; this.style.height='60px';">
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:federation@centurion-sport.org" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-text">
+                <p>© <span id="current-year"></span> Fédération Internationale du Centurion. Tous droits réservés.</p>
+                <p class="origin">Créé en République Démocratique du Congo <i class="fas fa-flag"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
