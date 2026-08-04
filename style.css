@@ -17,11 +17,14 @@
     --transition-fluide: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* === RESET & BASE === */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -107,7 +110,7 @@ a {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(11, 11, 11, 0.9);
+    background-color: rgba(11, 11, 11, 0.92);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(212, 175, 55, 0.3);
     transition: var(--transition-fluide);
@@ -121,7 +124,7 @@ a {
 }
 
 .logo img {
-    height: 50px;
+    height: 45px;
     transition: var(--transition-fluide);
 }
 
@@ -198,7 +201,7 @@ a {
 }
 
 .hero h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-weight: 900;
     letter-spacing: 15px;
     text-shadow: 0 0 30px rgba(0,0,0,0.7);
@@ -225,7 +228,6 @@ a {
     flex-wrap: wrap;
 }
 
-/* Icône de défilement */
 .scroll-indicator {
     position: absolute;
     bottom: 30px;
@@ -251,6 +253,24 @@ a {
 /* === SECTIONS GÉNÉRALES === */
 section {
     padding: 100px 0;
+}
+
+.page-header {
+    background-color: var(--noir-profond);
+    color: var(--blanc);
+    padding: 150px 0 60px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    color: var(--or-prestige);
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
 }
 
 .section-title {
@@ -286,7 +306,12 @@ section {
     background-color: var(--blanc-casse);
 }
 
-/* === CARTES (Piliers, Rôles, etc.) === */
+.bg-dark {
+    background-color: var(--noir-profond);
+    color: var(--blanc);
+}
+
+/* === CARTES === */
 .card-container {
     display: flex;
     justify-content: center;
@@ -340,7 +365,7 @@ section {
     line-height: 1.8;
 }
 
-/* === ORIGINE (Section Culturelle) === */
+/* === ORIGINE === */
 .origin-section {
     background: var(--noir-profond);
     color: var(--blanc);
@@ -383,7 +408,30 @@ section {
     color: rgba(212, 175, 55, 0.1);
 }
 
-/* === ROADMAP TIMELINE === */
+/* === TERRAIN SCHEMA === */
+.terrain-schema {
+    background: var(--blanc);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--ombre-douce);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.terrain-schema pre {
+    background: var(--noir-profond);
+    color: var(--or-prestige);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    text-align: left;
+    line-height: 1.4;
+    font-family: 'Courier New', monospace;
+}
+
+/* === TIMELINE === */
 .timeline {
     position: relative;
     max-width: 800px;
@@ -438,6 +486,44 @@ section {
     margin-bottom: 10px;
 }
 
+/* === REGLEMENT === */
+.reglement-articles {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.reglement-articles article {
+    background: var(--blanc);
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: var(--ombre-douce);
+    border-left: 5px solid var(--or-prestige);
+}
+
+.reglement-articles h3 {
+    color: var(--or-prestige);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.reglement-articles h4 {
+    color: var(--noir-profond);
+    font-size: 1.3rem;
+    margin: 25px 0 10px;
+}
+
+.reglement-articles ul, 
+.reglement-articles ol {
+    padding-left: 25px;
+    margin: 15px 0;
+}
+
+.reglement-articles li {
+    margin-bottom: 8px;
+    color: var(--gris-moyen);
+}
+
 /* === GALERIE === */
 .gallery-grid {
     display: grid;
@@ -450,35 +536,13 @@ section {
     overflow: hidden;
     border-radius: 15px;
     aspect-ratio: 4/3;
-    background-color: var(--gris-clair);
     box-shadow: var(--ombre-douce);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: var(--transition-fluide);
 }
 
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition-fluide);
-}
-
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.gallery-item .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
-    color: var(--blanc);
-    padding: 20px;
-    text-align: center;
-    font-weight: 600;
+.gallery-item:hover {
+    transform: scale(1.02);
+    box-shadow: var(--ombre-forte);
 }
 
 .gallery-placeholder {
@@ -499,9 +563,10 @@ section {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--or-prestige);
+    font-weight: 600;
 }
 
-/* === FORMULAIRE DE CONTACT === */
+/* === FORMULAIRE === */
 .contact-wrapper {
     display: flex;
     gap: 50px;
@@ -575,42 +640,38 @@ section {
     text-align: center;
 }
 
-/* === RÈGLEMENT PAGE === */
-.reglement-articles {
-    max-width: 900px;
-    margin: 0 auto;
+/* === VALEURS === */
+.valeurs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.reglement-articles article {
+.valeur-card {
     background: var(--blanc);
-    padding: 40px;
-    margin-bottom: 30px;
+    padding: 30px 25px;
     border-radius: 15px;
     box-shadow: var(--ombre-douce);
-    border-left: 5px solid var(--or-prestige);
+    text-align: center;
+    min-width: 150px;
+    flex: 1 1 150px;
+    max-width: 200px;
+    transition: var(--transition-fluide);
 }
 
-.reglement-articles h3 {
-    color: var(--or-prestige);
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+.valeur-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--ombre-forte);
 }
 
-.reglement-articles h4 {
-    color: var(--noir-profond);
-    font-size: 1.3rem;
-    margin: 25px 0 10px;
+.valeur-card .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
-.reglement-articles ul, 
-.reglement-articles ol {
-    padding-left: 25px;
-    margin: 15px 0;
-}
-
-.reglement-articles li {
-    margin-bottom: 8px;
-    color: var(--gris-moyen);
+.valeur-card h3 {
+    font-size: 1.1rem;
 }
 
 /* === FOOTER === */
@@ -701,6 +762,10 @@ section {
         flex-direction: column;
         text-align: center;
     }
+
+    .origin-visual {
+        font-size: 10rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -757,5 +822,9 @@ section {
 
     .contact-wrapper {
         flex-direction: column;
+    }
+
+    .page-header h1 {
+        font-size: 2.2rem;
     }
 }
