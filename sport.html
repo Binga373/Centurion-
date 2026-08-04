@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les règles du Centurion : le terrain, les rôles de Gardiennes et Chasseuses, et les actions iconiques comme le Renversement et la Capture Héroïque.">
+    <meta name="keywords" content="Centurion terrain, règles Centurion, Gardiennes, Chasseuses, Renversement, Capture Héroïque">
+    <title>Le Sport - Le Centurion | Terrain, Rôles et Actions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-centurion.png" alt="Logo Le Centurion" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230B0B0B%22 stroke=%22%23D4AF37%22 stroke-width=%223%22/><text x=%2250%22 y=%2265%22 font-family=%22Arial%22 font-size=%2240%22 fill=%22%23D4AF37%22 text-anchor=%22middle%22 font-weight=%22bold%22>C</text></svg>'; this.style.width='45px'; this.style.height='45px';">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="sport.html">Le Sport</a></li>
+                <li><a href="reglement.html">Règlement</a></li>
+                <li><a href="federation.html">Fédération</a></li>
+                <li><a href="developpement.html">Développement</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Le Sport</h1>
+                <p>Tout ce que vous devez savoir sur l'arène, les rôles et les actions iconiques.</p>
+            </div>
+        </section>
+
+        <!-- LE TERRAIN -->
+        <section class="bg-light">
+            <div class="container reveal">
+                <div class="section-title">
+                    <h2><i class="fas fa-map"></i> Le Terrain (L'Arène)</h2>
+                    <p>Un rectangle de 16m x 10m, tracé au sol. Deux zones distinctes pour deux rôles opposés.</p>
+                </div>
+                <div class="terrain-schema">
+                    <pre>
++--------------------------------------------------+
+|                ZONE DE CHASSE                     |
+|    (Chasseuse 1)                                  |
+|                                                   |
+|    +------------------------------------------+   |
+|    |          ZONE D'ÉDIFICATION              |   |
+|    |          (Gardiennes)                    |   |
+|    |                                          |   |
+|    |              [ TOTEM ]                   |   |
+|    |           5 Anneaux au sol               |   |
+|    |                                          |   |
+|    +------------------------------------------+   |
+|                                                   |
+|                ZONE DE CHASSE                     |
+|    (Chasseuse 2)                                  |
++--------------------------------------------------+</pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- LES RÔLES -->
+        <section>
+            <div class="container reveal">
+                <div class="section-title">
+                    <h2><i class="fas fa-users"></i> Les Rôles</h2>
+                    <p>4 joueurs par équipe, 2 sur le terrain en permanence.</p>
+                </div>
+                <div class="card-container">
+                    <div class="card card-gardiennes">
+                        <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Gardiennes</h3>
+                        <h4 style="color: var(--bleu-gardiennes); margin-bottom: 15px;">Les Bâtisseuses</h4>
+                        <p>Leur mission : empiler puis dépiler les 5 Anneaux sur le Totem pour compléter le Cycle. Elles protègent leur zone et peuvent réaliser une <strong>Capture Héroïque</strong> pour renverser la pression.</p>
+                        <p style="margin-top: 15px;"><strong><i class="fas fa-vector-square"></i> Zone :</strong> Zone d'Édification (centre).</p>
+                    </div>
+                    <div class="card card-chasseuses">
+                        <div class="card-icon"><i class="fas fa-crosshairs"></i></div>
+                        <h3>Chasseuses</h3>
+                        <h4 style="color: var(--orange-chasseuses); margin-bottom: 15px;">Les Traqueuses</h4>
+                        <p>Leur mission : éliminer les Gardiennes par un tir aérien direct. Elles traquent, se font des passes et tirent dans un délai de 12 secondes pour faire tomber les défenseures.</p>
+                        <p style="margin-top: 15px;"><strong><i class="fas fa-vector-square"></i> Zone :</strong> Zone de Chasse (pourtour).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACTIONS ICONIQUES -->
+        <section class="bg-light">
+            <div class="container reveal">
+                <div class="section-title">
+                    <h2><i class="fas fa-star"></i> Actions Iconiques</h2>
+                    <p>Les gestes qui définissent le Centurion et enflamment le public.</p>
+                </div>
+                <div class="card-container">
+                    <div class="card" style="border-bottom: 4px solid var(--bleu-gardiennes);">
+                        <div class="card-icon"><i class="fas fa-hand-rock"></i></div>
+                        <h3>Capture Héroïque</h3>
+                        <p>Attraper un tir aérien à deux mains. <strong>+7 points</strong> et Power Play immédiat. La Chasseuse tireuse est exclue 30 secondes.</p>
+                    </div>
+                    <div class="card" style="border-bottom: 4px solid var(--orange-chasseuses);">
+                        <div class="card-icon"><i class="fas fa-sync-alt"></i></div>
+                        <h3>Renversement</h3>
+                        <p>Les deux Gardiennes éliminées. Les rôles s'inversent en 10 secondes. <strong>+4 points</strong> pour les Chasseuses.</p>
+                    </div>
+                    <div class="card" style="border-bottom: 4px solid var(--or-prestige);">
+                        <div class="card-icon"><i class="fas fa-crown"></i></div>
+                        <h3>Cycle Parfait</h3>
+                        <p>5 Anneaux montés, 5 descendus sans interruption. <strong>+8 points</strong>. La maîtrise absolue du Centurion.</p>
+                    </div>
+                    <div class="card" style="border-bottom: 4px solid var(--noir-profond);">
+                        <div class="card-icon"><i class="fas fa-lock"></i></div>
+                        <h3>Verrouillage</h3>
+                        <p>Aucun Anneau posé, deux éliminations. <strong>+6 points</strong>. Une défense impénétrable dès les premières secondes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <img src="images/logo-centurion.png" alt="Logo FIC" class="footer-logo" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230B0B0B%22 stroke=%22%23D4AF37%22 stroke-width=%223%22/><text x=%2250%22 y=%2265%22 font-family=%22Arial%22 font-size=%2240%22 fill=%22%23D4AF37%22 text-anchor=%22middle%22 font-weight=%22bold%22>C</text></svg>'; this.style.width='60px'; this.style.height='60px';">
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:federation@centurion-sport.org" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-text">
+                <p>© <span id="current-year"></span> Fédération Internationale du Centurion. Tous droits réservés.</p>
+                <p class="origin">Créé en République Démocratique du Congo <i class="fas fa-flag"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
